@@ -45,10 +45,55 @@ if(str===reverseString){
 
 
 
-isPalindrome("abc123")
-isPalindrome()
+
+
+// isPalindrome("abc123")
+// isPalindrome()
+
+
+/* 
+
+MAX CHARS
+
+findMaxChars('aabbcccccccd')==='c'
+1. Create a map with with specified char and it count in string;
 
 
 
 
+*/
 
+//console.log(Object.keys("sandeep"))
+
+
+const findMaxChars=(str)=>{
+
+const arry=str.split('');
+const map={
+
+}
+let max=0;
+let maxChar=''
+
+for(let a of  arry){
+//console.log("A",a); 
+if(map[a]){
+    map[a]++
+}   else{
+    map[a]=1;
+}
+//map[a]=
+}
+console.log("obj", )
+for (let b in  map){
+    //console.log('b',b)
+    if(map[b]>max){
+        max=map[b];
+        maxChar=b
+    }
+}
+return maxChar 
+}
+
+
+console.log(findMaxChars('we r ssssss'))
